@@ -917,7 +917,7 @@ footer .col-lg-3 .social-icons li a:hover::before{
     transform: rotate(90deg);
     right: 0;
     height: 100%;
-    bottom: 300px;
+    bottom: 550px;
 }
 .productSlider .swiper-pagination {
     position: absolute !important;
