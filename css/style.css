@@ -373,13 +373,13 @@ header .row{
     bottom: -75px;
 }
 #about .back-head-text {
-    left: -70px;
+    left: -30px;
     width: 125%;
     top: -55px;
 }
 .back-head-text {
     font-weight: 600;
-    font-size: 77px;
+    font-size: 65px;
     line-height: 102px;
     color: transparent;
     -webkit-text-stroke: 1px #00263E;
@@ -434,7 +434,7 @@ header .row{
     color: #000000;
     margin-top: 40px;
     float: right;
-    margin-right: -30px;
+    margin-right: 0;
     transition: 0.5s all ease-in-out;
 }
 .detail:hover{
@@ -577,7 +577,6 @@ header .row{
 .news-images {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     min-height: 300px;
@@ -903,6 +902,9 @@ footer .col-lg-3 .social-icons li a:hover::before{
     width: 100%;
     height: 100%;
 }
+#home .container{
+    position: relative;
+}
 .homeSlider .swiper-pagination {
     position: absolute !important;
     text-align: center;
@@ -913,8 +915,9 @@ footer .col-lg-3 .social-icons li a:hover::before{
     transform: translate3d(0,0,0);
     z-index: 10;
     transform: rotate(90deg);
-    right: 250px;
+    right: 0;
     height: 100%;
+    bottom: 300px;
 }
 .productSlider .swiper-pagination {
     position: absolute !important;
@@ -945,11 +948,12 @@ footer .col-lg-3 .social-icons li a:hover::before{
 #products-page .col-lg-4{
     position: relative;
 }
-.homeSlider .swiper-pagination-bullet{
+.homeSlider .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background: rgba(242, 186, 82, 0.8);
     transition: 1s all ease-in-out;
+    margin-right: 5px;
 }
 .productSlider .swiper-pagination-bullet,
 .newsSlider .swiper-pagination-bullet{
@@ -1746,4 +1750,10 @@ textarea{
 }
 .contact-main.active{
     transform: scale(1);
+}
+#news .news-img:not(:nth-child(3n+1)){
+    margin-right: 19px !important;
+}
+#news .news-img:first-child{
+    margin-right: 19px !important;
 }

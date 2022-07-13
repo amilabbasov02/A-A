@@ -4,10 +4,20 @@ $(document).ready(function () {
     slidesPerColumn: 2,
     spaceBetween: 30,
     slidesPerColumnFill: 'column',
- 
   pagination: {
-        el: '.swiper-pagination',
-      },
+    el: '.swiper-pagination',
+  },
+  breakpoints: {  
+    640: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
   });
   var homeSlider = new Swiper(".homeSlider", {
     effect: "fade",
