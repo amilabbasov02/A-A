@@ -46,10 +46,11 @@
     #about .col-lg-7{
         width: 100% !important;
     }
-    #about .col-lg-7 img:first-child{
+    #about .col-lg-7 img:first-child {
         width: 80%;
         max-height: 351px;
         object-fit: cover;
+        border-radius: 20px;
     }
     #about .col-lg-5{
         width: 100% !important;
@@ -96,5 +97,96 @@
     .lang-src img {
         margin-left: 15px;
         margin-right: 15px;
+    }
+    .homeSlider.swiper-container-fade,
+    .productSlider.swiper-container-fade{
+        max-height: 500px;
+    }
+    #home {
+        height: 500px;
+    }
+    .homeSlider .swiper-pagination {
+        bottom: 250px;
+    }
+    #about .head-text-div {
+        left: 0;
+    }
+    .logo-1,
+    .logo-2{
+        width: 110px;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media only screen and (max-width: 768px){
+    #products .col-lg-5 {
+        width: 100% !important;
+        margin-bottom: 70px !important;
+    }
+    .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+    .project-img {
+        width: 100%;
+    }
+    .project-img:first-child{
+        margin-bottom: 30px;
+    }
+    .back-head-text {
+        font-size: 50px;
+    }
+    #news .news-img:first-child {
+        margin-right: 10px !important;
+    }
+    #news .news-img:nth-child(3n) {
+        margin-right: 10px !important;
+    }
+    #news .news-img {
+        margin-right: 10px !important;
+    }
+    footer .row .col-lg-3:first-child{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .row .col-lg-3:last-child{
+        width: 100%;
+        margin-top: 20px;
+    }
+    footer .col-lg-3{
+        width: 50%;
+    }
+    #about .head-text {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:576px){
+    #news .news-img:nth-child(2n) {
+        margin-right: 10px !important;
+    }
+    #about .col-lg-7 img:last-child {
+        max-width: 250px;
+        bottom: -35px;
+    }
+    #about .back-head-text {
+        left: -50px;
+    }
+    #about .back-head-text {
+        font-size: 42px;
+    }
+    .back-head-text {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:400px){
+    #about .col-lg-7 img:last-child {
+        max-width: 200px;
+        bottom: -35px;
     }
 }

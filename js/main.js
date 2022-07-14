@@ -74,6 +74,52 @@ $(document).ready(function () {
       $(".nav-purpose").removeClass("active")
       $(".nav-program").addClass("active")
     })
+    $(".menu").click(function(){
+      $(".responsive-menu").addClass("menu-open")
+    })
+    $(".about_menu a:not(.about-menu a)").click(function(){
+      $(".about-menu").toggleClass("active")
+    })
+    $(".products_menu a:not(.products-menu a)").click(function(){
+      $(".products-menu").toggleClass("active")
+    })
+    $(".services-menu").click(function(){
+      $(this).toggleClass("active")
+      $(".ser-menu").toggleClass("active")
+      $(".products-menu li").not(this).removeClass("active")
+      $(".products-menu li ul").not(".ser-menu").removeClass("active")
+    })
+    $(".wireless-menu").click(function(){
+      $(this).toggleClass("active")
+      $(".wire-menu").toggleClass("active")
+      $(".products-menu li").not(this).removeClass("active")
+      $(".products-menu li ul").not(".wire-menu").removeClass("active")
+    })
+    $(".purpose-menu").click(function(){
+      $(this).toggleClass("active")
+      $(".purpose_menu").toggleClass("active")
+      $(".products-menu li").not(this).removeClass("active")
+      $(".products-menu li ul").not(".purpose_menu").removeClass("active")
+    })
+    $(".program-menu").click(function(){
+      $(this).toggleClass("active")
+      $(".program_menu").toggleClass("active")
+      $(".products-menu li").not(this).removeClass("active")
+      $(".products-menu li ul").not(".program_menu").removeClass("active")
+    })
+    $(".close-menu").click(function(){
+      $(".responsive-menu").removeClass("menu-open")
+      $(".about-menu").removeClass("active")
+      $(".products-menu").removeClass("active")
+      $(".services-menu").removeClass("active")
+      $(".purpose-menu").removeClass("active")
+      $(".wireless-menu").removeClass("active")
+      $(".program-menu").removeClass("active")
+      $(".ser-menu").removeClass("active")
+      $(".purpose_menu").removeClass("active")
+      $(".wire-menu").removeClass("active")
+      $(".program_menu").removeClass("active")
+    })
     $(".contact-main").addClass("active")
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
