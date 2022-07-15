@@ -24,6 +24,9 @@ $(document).ready(function () {
       $("header").css("background","#758592")
       $(".logo-2").css("display","block")
       $(".logo-1").css("display","none")
+      $(".about").removeClass("transition-0")
+      $(".products").addClass("transition-0")
+      $(".search-input").removeClass("open")
     })
     $(".products").mouseleave(function(){
       $(".products").removeClass("active")
@@ -42,9 +45,12 @@ $(document).ready(function () {
     $(".nav .nav-item:nth-child(2) a").mouseenter(function(){
       $(".about").removeClass("active")
       $(".products").addClass("active")
+      $(".about").addClass("transition-0")
+      $(".products").removeClass("transition-0")
       $("header").css("background","#758592")
       $(".logo-2").css("display","block")
       $(".logo-1").css("display","none")
+      $(".search-input").removeClass("open")
     })
     $(".services").click(function(){
       $(".products img").css("display","none")

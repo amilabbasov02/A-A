@@ -85,10 +85,10 @@ $(document).ready(function () {
         0:{
             items:1
         },
-        600:{
+        576:{
             items:3
         },
-        1000:{
+        1280:{
            items:4
         },
     }

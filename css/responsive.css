@@ -31,6 +31,37 @@
     #news .news-img:nth-child(3n){
         margin-right: 0 !important;
     }
+    #about-page .container {
+        max-width: 100% !important;
+        padding: 0 40px !important;
+    }
+    #about-page{
+        overflow: hidden;
+    }
+    #gallery-page .col-lg-3 {
+        max-width: 31%;
+    }
+    #gallery-page .col-lg-3:not(:nth-child(3n)) {
+        margin-right: 20px !important;
+    }
+    #gallery-page .col-lg-3:nth-child(3n) {
+        margin-right: 0 !important;
+    }
+    .news-block {
+        margin-bottom: 30px;
+    }
+    .block {
+        margin-bottom: 100px;
+    }
+    #products-page{
+        overflow: hidden;
+    }
+    .block:nth-child(2n) .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        left: 45% !important;
+    }
+    .number-select {
+        width: 16% !important;
+    }
 }
 @media only screen and (max-width: 992px){
     #news .news-img:nth-child(3n) {
@@ -118,6 +149,74 @@
     .menu{
         display: block;
     }
+    .logos .img {
+        max-width: 48%;
+        margin-bottom: 10px;
+    }
+    .logos {
+        justify-content: space-between;
+    }
+    .about-block .col-lg-6:first-child {
+        margin-right: 30px !important;
+    }
+    #about-page .head-text-div {
+        margin-top: 20px !important;
+    }
+    .logo-rules {
+        width: 100%;
+    }
+    .gallery2 .col-lg-3:not(:first-child) .gallery-card-text {
+        width: 70%;
+    }
+    .current-projects .col-lg-4,
+    .finished-projects .col-lg-6-pr{
+        width: 48%;
+    }
+    .news-block .col-lg-4,
+    .news-block .col-lg-8{
+        width: 100% !important;
+    }
+    .news-block{
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .newsSlider {
+        height: 100%;
+    }
+    .news-block .col-lg-4{
+        max-height: 450px;
+    }
+    #news-page .body-text {
+        margin-left: 0;
+    }
+    .card-btn {
+        right: 0;
+    }
+    .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        bottom: 60%;
+        left: -45% !important;
+    }
+    .block:nth-child(2n) .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        left: 35% !important;
+    }
+    #products-page  .back-head-text {
+        font-size: 46px;
+    }
+    .contact-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-main .col-lg-6-pr{
+        width: 100%;
+    }
+    .contact-main .col-lg-6-pr:first-child{
+        order: 1;
+    }
+    .contact-main .col-lg-6-pr:first-child{
+        max-height: 420px;
+        height: 100%;
+        margin-bottom: 120px;
+    }
 }
 @media only screen and (max-width: 768px){
     #products .col-lg-5 {
@@ -165,6 +264,132 @@
     #about .head-text {
         margin-left: 0;
     }
+    #about-page .col-lg-6 {
+        width: 100%;
+    }
+    .about-block {
+        flex-wrap: wrap;
+    }
+    #about-page .row .about-block:first-child .col-lg-6:first-child {
+        order: 1;
+    }
+    .about-text:first-child{
+        margin-top: 30px;
+    }
+    .about-block:nth-child(2n) .col-lg-6:first-child .img-bg {
+        right: 15px;
+    }
+    .img-bg {
+        background: #F2BA52;
+        border-radius: 20px;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    #about-page .container {
+        max-width: 100% !important;
+        padding: 0 25px !important;
+    }
+    #about-page .head-text {
+        z-index: 1;
+        font-weight: 600;
+        font-size: 31px;
+        line-height: 40px;
+        color: #313030;
+        width: 100%;
+    }
+    #gallery-page .col-lg-3 {
+        max-width: 48%;
+    }
+    #gallery-page .col-lg-3:not(:nth-child(2n)) {
+        margin-right: 0 !important;
+    }
+    #gallery-page .col-lg-3:nth-child(2n) {
+        margin-right: 0 !important;
+    }
+    .gallery {
+        justify-content: space-between;
+    }
+    .gallery-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .gallery-card span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .search {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .gallery2 {
+        justify-content: space-between;
+    }
+    .gallery2 .col-lg-3,
+    .gallery .col-lg-3{
+        max-height: 340px;
+        margin-bottom: 30px !important;
+    }
+    .gallery2 .col-lg-3:not(:first-child) .gallery-card-text {
+        width: 70%;
+    }
+    .gallery-card {
+        margin-bottom: 0 !important;
+    }
+    .current-projects .col-lg-4,
+    .finished-projects .col-lg-6-pr{
+        width: 100%;
+    }
+    .block .col-lg-5,
+    .block .col-lg-4{
+        width: 100% !important;
+    }
+    .block{
+        flex-wrap: wrap;
+    }
+    .productSlider {
+        max-height: 100% !important;
+    }
+    .slider-bg{
+        max-height: 100% !important;
+        right: 10px;
+        top: 10px;
+    }
+    .block:nth-child(2n) .slider-bg {
+        right: -10px;
+        top: -10px;
+    }
+    .block:nth-child(2n) .col-lg-5{
+        order: 1;
+    }
+    .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        bottom: 52%;
+        left: -120px !important;
+    }
+    .block:nth-child(2n) .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        left: 67% !important;
+    }
+    .card-head-1 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .card-head-2 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .card-body {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    #products-page  .back-head-text {
+        font-size: 40px;
+        line-height: 52px;
+        filter: blur(2.5px);
+        top: -17px;
+    }
 }
 @media only screen and (max-width:576px){
     #news .news-img:nth-child(2n) {
@@ -183,10 +408,87 @@
     .back-head-text {
         font-size: 40px;
     }
+    .back-head-text{
+        filter: blur(2.5px);
+    }
+    #about-page .head-text {
+        font-size: 23px;
+    }
+    .rules-head {
+        font-size: 16px;
+    }
+    .rules-list li {
+        font-size: 16px;
+    }
+    .logo-back-head {
+        font-size: 29px;
+    }
+    .partners-slider .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-text {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .gallery-card span {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .search {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .search-input img {
+        top: 7px;
+    }
+    .type-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .project-head-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .project-body-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .block:nth-child(2n) .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        left: 53% !important;
+    }
+    .head-text {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    #products-page  .back-head-text {
+        font-size: 25px;
+        filter: blur(1.5px);
+    }
 }
 @media only screen and (max-width:400px){
     #about .col-lg-7 img:last-child {
         max-width: 200px;
         bottom: -35px;
+    }
+    .logo-back-head {
+        filter: blur(1.5px);
+    }
+    .logo-back-head {
+        font-size: 25px;
+    }
+    .block:nth-child(2n) .productSlider.swiper-container-horizontal>.swiper-pagination-bullets, .productSlider .swiper-pagination-custom, .productSlider .swiper-pagination-fraction {
+        left: 42% !important;
+    }
+    .head-text {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    #products-page  .back-head-text {
+        font-size: 22px;
+        filter: blur(1.5px);
+        line-height: 32px;
+        top: -16px;
     }
 }
