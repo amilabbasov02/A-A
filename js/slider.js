@@ -94,5 +94,4 @@ $(document).ready(function () {
     }
   })
   $('.number-select').niceSelect();
-  
 });

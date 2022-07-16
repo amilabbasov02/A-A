@@ -212,10 +212,27 @@
     .contact-main .col-lg-6-pr:first-child{
         order: 1;
     }
-    .contact-main .col-lg-6-pr:first-child{
+    .contact-main .col-lg-6-pr:first-child {
         max-height: 420px;
         height: 100%;
-        margin-bottom: 120px;
+        margin-bottom: 250px;
+    }
+    .contact-input {
+        max-width: 49%;
+        width: 100%;
+    }
+    .head-inputs .contact-input:last-child {
+        max-width: 49% !important;
+    }
+    .form-group .body-inputs .contact-input:nth-child(3) {
+        max-width: 37%;
+        width: 100%;
+    }
+    .form-group .body-inputs .contact-input:nth-child(4) {
+        max-width: 49% !important;
+    }
+    .contact-foot li, .contact-foot span, .contact-foot a {
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -390,6 +407,44 @@
         filter: blur(2.5px);
         top: -17px;
     }
+    .form-group .body-inputs .contact-input:nth-child(3) {
+        max-width: 82%;
+        width: 100%;
+        order: 1;
+    }
+    .form-group .body-inputs .contact-input:nth-child(4) {
+        max-width: 100% !important;
+    }
+    .number-select {
+        order: 1;
+    }
+    .body-inputs {
+        flex-wrap: wrap;
+    }
+    .head-inputs {
+        flex-wrap: wrap;
+    }
+    .contact-input {
+        max-width: 100%;
+    }
+    .head-inputs .contact-input:last-child {
+        max-width: 100% !important;
+    }
+    .contact-foot li, .contact-foot span, .contact-foot a {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .contact-foot li {
+        width: 49%;
+    }
+    .contact-foot span:nth-child(4){
+        display: none;
+    }
+    .contact-foot li:nth-child(3),
+    .contact-foot li:nth-child(7) {
+        display: flex;
+        place-content: flex-end;
+    }
 }
 @media only screen and (max-width:576px){
     #news .news-img:nth-child(2n) {
@@ -406,7 +461,7 @@
         font-size: 42px;
     }
     .back-head-text {
-        font-size: 40px;
+        font-size: 38px;
     }
     .back-head-text{
         filter: blur(2.5px);
@@ -466,6 +521,18 @@
         font-size: 25px;
         filter: blur(1.5px);
     }
+    .form-group .body-inputs .contact-input:nth-child(3) {
+        max-width: 78%;
+        width: 100%;
+        order: 1;
+    }
+    .number-select {
+        width: 20% !important;
+    }
+    .contact-foot li, .contact-foot span, .contact-foot a {
+        font-size: 12px;
+        line-height: 21px;
+    }
 }
 @media only screen and (max-width:400px){
     #about .col-lg-7 img:last-child {
@@ -490,5 +557,13 @@
         filter: blur(1.5px);
         line-height: 32px;
         top: -16px;
+    }
+    .form-group .body-inputs .contact-input:nth-child(3) {
+        max-width: 73%;
+        width: 100%;
+        order: 1;
+    }
+    .number-select {
+        width: 25% !important;
     }
 }

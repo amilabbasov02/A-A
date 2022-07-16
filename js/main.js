@@ -219,4 +219,13 @@ $(document).ready(function () {
         }
       }
     }
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 50) {
+          $('header').addClass('sticky')
+          $('.click-top').css("display","block")
+      } else {
+          $('header').removeClass('sticky')
+          $('.click-top').css("display","none")
+      }
+    });
 });
