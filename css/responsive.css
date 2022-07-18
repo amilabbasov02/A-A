@@ -234,12 +234,12 @@
     .contact-foot li, .contact-foot span, .contact-foot a {
         font-size: 15px;
     }
-}
-@media only screen and (max-width: 768px){
     #products .col-lg-5 {
         width: 100% !important;
         margin-bottom: 70px !important;
     }
+}
+@media only screen and (max-width: 768px){
     .projects {
         display: flex;
         flex-direction: row;
@@ -533,6 +533,29 @@
         font-size: 12px;
         line-height: 21px;
     }
+    #products ul {
+        margin-top: 35px;
+        margin-left: -68px;
+    }
+    .body-head {
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 125.4%;
+        display: inline-block;
+        white-space: normal;
+    }
+}
+@media only screen and (max-width:441px){
+    #products .col-lg-5:nth-child(5) .body-head {
+        width: 60% !important;
+    }
+    #products .col-lg-5:nth-child(2) .body-head {
+        width: 77%;
+    }
+    #products .col-lg-5:nth-child(2) .arrow {
+        top: -25px;
+    }
 }
 @media only screen and (max-width:400px){
     #about .col-lg-7 img:last-child {
@@ -565,5 +588,16 @@
     }
     .number-select {
         width: 25% !important;
+    }
+}
+@media only screen and (max-width:373px){
+    #products .col-lg-5:nth-child(2) .body-head {
+        width: 86%;
+    }
+    #products .col-lg-5:nth-child(2) .arrow {
+        top: -25px;
+    }
+    .back-head-text {
+        font-size: 36px;
     }
 }

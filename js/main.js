@@ -228,4 +228,7 @@ $(document).ready(function () {
           $('.click-top').css("display","none")
       }
     });
+    $(".mouse").click(function(){
+      window.scrollTo({ top: 900, behavior: 'smooth' })
+    })
 });
